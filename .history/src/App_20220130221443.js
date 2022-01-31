@@ -1,27 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
-import astyal from './astyal';
 import { Component } from 'react';
 
 
 class App extends Component {
   constructor(props) {
     super(props);
+    this.pClick = this.pClick.bind(this);
     this.state = {
       name: 'leonardo',
-      age: 22,
+      age: '22',
       lastName: 'queiros leao',
     }
   }
-  
-  pClick=()=> {
+  pClick() {
     this.setState({ name: 'Era Leonardo, agora é Leonidas',
   age: '23'});
-  }
-  aClick=(oi)=>{ //here is using 'event', but, i can use any name = 'oi'
-    oi.preventDefault();
-    const {age} = this.state;
-    this.setState({ age: age + 11 })
   }
   render() {
     let { name } = this.state;
@@ -31,17 +25,14 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-            {name + parseInt(age)}
-          <a onClick={this.aClick} href="https://www.astyal.com">
+          <p onClick={this.pClick}>
+            {name + age}
+          </p>
+          <a onClick={() => age = age + 1}
+          >
             Learn React
           </a>
-          <button className='astyal'>
-            
-
-          </button>
-
         </header>
-
       </div>
     )
   }

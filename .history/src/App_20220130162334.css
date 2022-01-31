@@ -21,7 +21,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white; 
+  color: white;
 }
 
 .App-link {
@@ -35,16 +35,4 @@
   to {
     transform: rotate(360deg);
   }
-}
-button{
-  width: 1005px;
-  height: 85px;
-  color: blue;
-  background-color: cyan;
-  margin: 50px;
-  font-size: 40px;
-  font-family: 'Times New Roman', Times, serif;
-
-}button:active{
-  background-color:olivedrab;
 }

@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import astyal from './astyal';
+import './astyal';
 import { Component } from 'react';
 
 
@@ -13,7 +13,6 @@ class App extends Component {
       lastName: 'queiros leao',
     }
   }
-  
   pClick=()=> {
     this.setState({ name: 'Era Leonardo, agora é Leonidas',
   age: '23'});
@@ -22,6 +21,10 @@ class App extends Component {
     oi.preventDefault();
     const {age} = this.state;
     this.setState({ age: age + 11 })
+  }
+  divClick = (event)=>{
+    event.preventDefault();
+    astyal;
   }
   render() {
     let { name } = this.state;
@@ -35,10 +38,6 @@ class App extends Component {
           <a onClick={this.aClick} href="https://www.astyal.com">
             Learn React
           </a>
-          <button className='astyal'>
-            
-
-          </button>
 
         </header>
 
