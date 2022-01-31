@@ -5,15 +5,14 @@ import { Component } from 'react';
 
 
 class App extends Component {
-  constructor(props) {
+  constructor(props) 
     super(props);
     this.state = {
-      name: 'leonardo jhjhjhhjhjh',
+      name: 'leonardo',
       age: 22,
       lastName: 'queiros leao',
     }
   }
-  
   pClick=()=> {
     this.setState({ name: 'Era Leonardo, agora é Leonidas',
   age: '23'});
@@ -35,8 +34,8 @@ class App extends Component {
           <a onClick={this.aClick} href="https://www.astyal.com">
             Learn React
           </a>
-          <button className='astyal'>
-            
+          <button onClick={astyal}>
+            oi
 
           </button>
 

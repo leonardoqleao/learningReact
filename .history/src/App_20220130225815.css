@@ -42,8 +42,7 @@ button{
   color: blue;
   background-color: cyan;
   margin: 50px;
-  font-size: 40px;
-  font-family: 'Times New Roman', Times, serif;
+  font-size: 80px;
 
 }button:active{
   background-color:olivedrab;
