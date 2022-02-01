@@ -1,8 +1,8 @@
-import logo from './logo.svg';
+import logo from './astyal.svg';
 import './App.css';
 import { Component } from 'react';
 
-class astyal extends Component {
+class Astyal extends Component {
   render() {
     return (
 
@@ -23,4 +23,4 @@ class astyal extends Component {
     )
   }
 }
-export default astyal;
+export default Astyal;
