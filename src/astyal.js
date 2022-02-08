@@ -1,24 +1,31 @@
-import logo from './astyal.svg';
 import './App.css';
 import { Component } from 'react';
 
 class Astyal extends Component {
+  state = {
+    posts: [{
+      id: 1,
+      title: 'O titulo 1',
+      body: 'O corpo 1',
+    },
+    {
+      id: 2,
+      title: 'O titulo 2',
+      body: 'O corpo 2',
+    },
+    {
+      id: 3,
+      title: 'O titulo 3',
+      body: 'O corpo 3',
+    },
+  ],
+  };
   render() {
+    const {post} = this. state;
     return (
 
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-           Essa é uma mudança contecendo na 
-          <a href="https://www.astyal.com">
-          </a>
-          <button>
-            página toda
-
-          </button>
-
-        </header>
-
+        {post.map(post => <h1>{post.title}</h1>)}
       </div>
     )
   }
