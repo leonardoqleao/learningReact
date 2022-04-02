@@ -1,6 +1,7 @@
 .container{
   min-height: 100vh;
-  background-color: white;
+  background-color: rgb(202, 202, 202);
+  padding: 5px;
 }
 .posts{
   display: grid;
@@ -9,7 +10,11 @@
 }
 .post{ 
   background-color:rgb(252, 245, 236);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.226);
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.363);
+  transition: transform 100ms ease-in-out;
+}
+.post:hover{
+  transform: scale(1.03);
 }
 .postContent{
   padding: 10px;
